@@ -1,102 +1,139 @@
 html {
-  scroll-behavior: smooth;
- }
- img {
-  width: 50px;
- }
-
- .imageposter{
-  position: relative;
-  width: 13%;
-  height: auto;
-  padding: 0 20px;
-  margin-left: 30px;
-  transition: 1s all;
- }
-
-.imageposter:hover{
-  margin: 0 0px;
-  opacity: 1;
-  transform: scale(1.2);
-} 
-
-
-
-#l1{
-  width: 0px;
-  height: 0px;
-}
- iframe{
-  opacity: 0;
- /* width: 200px;
-  height: 300px;*/
-  position: relative;
-  left: -210px;
-  top: 0px;
- }
- #frame:hover{
-  opacity: 1;
- } 
-
-
- body {
-  margin: 0;
-  background-color: #000;
- }
- h1 {
-  font-family: Arial;
-  color: red;
-  
- }
- .number{
-  position: absolute;
-  left: 0px;
-  z-index: 3;
- }
- .item{
-  position: relative;
- }
- 
- .anterior{
- width: 80px;
- position: relative;
- top: -100px;
- opacity: 0;
-  
- }
- .proximo{
-  width: 80px;
-  position: absolute;
-  top: 50%;
-  align-items: center;
-  opacity: 0;
-  z-index: 1;
-   
- }
-
- .proximo:hover{
-  opacity: .5;
-}
-.anterior:hover{
-  opacity: .5;
-}
-#number10{
-  position: absolute;
-  left: 0px;
-  z-index: 3;
+    scroll-behavior: smooth;
 }
 
-.logo{
-  width: 0px;
-  height: 0px;
+img {
+    width: 50px;
+}
+
+.imageposter {
+    position: relative;
+    width: 13%;
+    height: auto;
+    padding: 0 23px;
+    margin-left: 30px;
+    transition: 1s all;
+}
+
+.imageposter:hover {
+    margin: 0 0px;
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 
- .conteiner {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 100%);
-  overflow: hidden;
-  scroll-behavior: smooth;
- }
- 
+
+#l1 {
+    width: 0px;
+    height: 0px;
+}
+
+iframe {
+    opacity: 0;
+    /* width: 200px;
+    height: 300px;*/
+    position: relative;
+    left: -210px;
+    top: 0px;
+}
+
+#frame:hover {
+    opacity: 1;
+}
+
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+h1 {
+    font-family: Arial;
+    color: red;
+
+}
+
+.number {
+    position: absolute;
+    left: 0px;
+    z-index: 3;
+}
+
+.item {
+    position: relative;
+}
+
+#anterior {
+    width: 80px;
+    position: fixed;
+    opacity: 0;
+    top: 25%;
+    left: -1%;
+    z-index: 3;
+}
+
+#proximo {
+    width: 80px;
+    position: fixed;
+    opacity: 0;
+    top: 25%;
+    right: -1%;
+    z-index: 3;
+}
+
+#anteriorseries {
+    width: 80px;
+    position: fixed;
+    opacity: 0;
+    top: 70%;
+    left: -1%;
+    z-index: 3;
+
+}
+
+#proximoseries {
+    width: 80px;
+    position: fixed;
+    opacity: 0;
+    top: 70%;
+    right: -1%;
+    z-index: 3;
+
+
+}
+
+#proximoseries:hover {
+    opacity: .5;
+}
+
+#anteriorseries:hover {
+    opacity: .5;
+}
+
+#proximo:hover {
+    opacity: .5;
+}
+
+#anterior:hover {
+    opacity: .5;
+}
+
+#number10 {
+    position: absolute;
+    left: 0px;
+    z-index: 3;
+}
+
+.logo {
+    width: 0px;
+    height: 0px;
+}
+
+
+.conteiner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 80%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,30 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    margin: 0;
+    background-color: black;
+}
+h3{
+    color: red;
+    position: relative;
+    top: 10px;
+    left: 50px;
+
+    
+}
+
+p{
+    color: white;
+    position: relative;
+    left: 150px ;
+    text-align: justify;
+    
+}
+img{
+    float: left;
+    width: 150px;
+    height: 250px;
+}

@@ -3,48 +3,58 @@ html {
 }
 
 img {
-    width: 50px;
+    width: 70%;
 }
 
 .imageposter {
     position: relative;
-    width: 13%;
+    width: 10%;
     height: auto;
-    padding: 0 23px;
-    margin-left: 30px;
+    margin-left: 70px;
     transition: 1s all;
+
 }
 
-.imageposter:hover {
-    margin: 0 0px;
+.imageposter:hover, iframe:hover {
     opacity: 1;
-    transform: scale(1.2);
+    z-index: 4;
+    transform: scale(1.3);
 }
-
 
 
 #l1 {
     width: 0px;
     height: 0px;
 }
-
-iframe {
-    opacity: 0;
-    /* width: 200px;
-    height: 300px;*/
-    position: relative;
-    left: -210px;
-    top: 0px;
+html, html * {
+    scrollbar-color: rgba(0,0,0,.2) #dfdfdf;
+    scrollbar-width: thin;
 }
 
-#frame:hover {
-    opacity: 1;
+::-webkit-scrollbar {
+    background-color: #dfdfdf;
+    width: 6px;
 }
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+
 
 
 body {
     margin: 0;
-    background-color: #000;
+    background-color: black;
+   /*
+   background-image: url("/pages/img/911.png");
+   */
+   
+    
 }
 
 h1 {
@@ -52,52 +62,100 @@ h1 {
     color: red;
 
 }
-
+.carossel-cartaz{
+    position: relative;
+}
 .number {
     position: absolute;
     left: 0px;
-    z-index: 3;
-}
+    top: -110px;
 
-.item {
+}
+.filme-item{
+    position: relative; 
+}
+.serie-item {
+    position: relative;
+}
+.serie-item .imageposter{
+    padding: 0 13px;
+}
+.filme-item .imageposter{
+    padding: 0 15px;
+}
+.header{
+    position: relative;
+    height: 40px;
+    background-color: grey;
+}
+#seach{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+#header-Home{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+#header-Exclusivo{
+    position: absolute;
+    left: 60px;
+    top: 0px;
+}
+#header-Catalogo{
+    position: absolute;
+    left: 135px;
+    top: 0px;
+}
+iframe{
+    width: 700px;
+    pointer-events: none;
+    height: 500px;
+    
+}
+#carrossel{
     position: relative;
 }
 
 #anterior {
     width: 80px;
-    position: fixed;
+    position: absolute;
     opacity: 0;
-    top: 25%;
-    left: -1%;
-    z-index: 3;
-}
+    bottom: 30px;
+    left: 0px;
+    z-index: 4;
 
+}
 #proximo {
     width: 80px;
-    position: fixed;
+    position: absolute;
     opacity: 0;
-    top: 25%;
-    right: -1%;
-    z-index: 3;
+    bottom: 30px;
+    right: 0px;
+    
+    
 }
+
+
 
 #anteriorseries {
     width: 80px;
-    position: fixed;
+    position: absolute;
     opacity: 0;
-    top: 70%;
-    left: -1%;
-    z-index: 3;
+    bottom: 30px;
+    left: 0px;
+    z-index: 4;
 
 }
 
 #proximoseries {
     width: 80px;
-    position: fixed;
+    position: absolute;
     opacity: 0;
-    top: 70%;
-    right: -1%;
-    z-index: 3;
+    bottom: 30px;
+    right: 0px;
+    z-index: 4;
 
 
 }
@@ -128,12 +186,89 @@ h1 {
     width: 0px;
     height: 0px;
 }
+.num{
+    width: 40px;
+}
+#conteiner-1{
+    position: relative;
+}
+p img{
+   width: 20px; 
+   color: white;
+}
+#frame-1{
+    position: absolute;
+    right: 150px;
+    width: 50%;
+}
+#top-1-series{
+    position: absolute;
+    left: 10px;
+    bottom: 40%;
+    width: 30%;
+}
+#top-1-series img{
+   
+    width: 30%;
+   
 
+}
+#top-1-series p{
+    position: absolute;
+    text-align: justify;
+    
+}
+#top-1-filmes p{
+    position: absolute;
+    text-align: justify;
+    
+}
+#frame-3{
+   float: right;
+}
+#conteiner-3{
+    position: relative;
+}
+#top-1-filmes{
+    position: absolute;
+    left: 10px;
+    bottom: 40%;
+    width: 30%;
+}
+
+#top-1-filmes img{
+   
+    width: 30%;
+   
+
+}
 
 .conteiner {
     position: relative;
+    width: auto;
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 80%);
+    grid-template-columns: repeat(2, 68%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+#icone-series{
+ width: 40px;
+
+ left: 10%;
+}
+#icone-filmes{
+width: 40px;
+
+}
+
+
+.conteiner-cartaz{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
     overflow: hidden;
     scroll-behavior: smooth;
 }

@@ -349,9 +349,15 @@ img {
     .conteiner {
         display: grid;
         grid-template-columns: repeat(2, 4%);
+        overflow: scroll;
+       
+
+        
 
     }
-
+    div::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 @media (min-width:504px) and (max-width: 1920px) {
@@ -392,6 +398,7 @@ img {
 
     .container {
         display: grid;
+
         grid-template-columns: repeat(2, 4%);
     }
 }

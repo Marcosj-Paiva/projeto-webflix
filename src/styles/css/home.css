@@ -36,7 +36,7 @@ html * {
 
 ::-webkit-scrollbar {
     background-color: #dfdfdf;
-    width: 6px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -276,7 +276,7 @@ p img {
     width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 68%);
+    grid-template-columns: repeat(2, 6%);
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -353,7 +353,7 @@ p img {
     .conteiner {
         display: grid;
         grid-template-columns: repeat(2, 4%);
-        overflow: scroll;
+        
     }
    
 }

@@ -350,11 +350,9 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 4%);
         overflow: scroll;
-       
-
-        
-
+    
     }
+
     div::-webkit-scrollbar{
         display: none;
     }

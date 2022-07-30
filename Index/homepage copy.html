@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../styles/css/home.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../scripts/core/CoreRequest.js" type="module"></script>
+  <title>homepage</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="header">
+      <div>
+        <p id="header-Home">Home</p>
+      </div>
+      <div>
+        <p id="header-Exclusivo">Exclusivo</p>
+      </div>
+      <div>
+        <p id="header-Catalogo">Catalogo</p>
+      </div>
+      <div id="seach">
+        seach
+        <input type="text" id="seachmovie" />
+
+        <input type="submit" value="ok" id="bnt_submit" onclick="enviar()" />
+        <script typer="text/javascript">
+          function enviar(params) {
+            valor = document.getElementById("seachmovie").value;
+            window.location = "movies.html?movies=" + valor;
+          }
+        </script>
+      </div>
+    </div>
+  </header>
+  <div class="carossel-cartaz">
+    <div class="conteiner-cartaz">
+
+      <section id="conteiner-1">
+        <div id="top-1-series">
+          <img src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg">
+          <p>
+            <font color="white">
+              Depois de seis meses do conflito de Starcourt, a cidade foi tomada por um rastro de terror e destruição.
+              Os
+              efeitos da batalha são sentidos pelo grupo de amigos, que se separam pela primeira vez, enquanto passam
+              por um
+              período turbulento típico da adolescência na escola. Em um momento em que todos estão mais vulneráveis,
+              uma
+              nova ameaça sobrenatural surge. No entanto, o novo mistério pode conter a resposta para acabar com os
+              terrores
+              do Mundo Invertido.
+            </font>
+          </p>
+
+        </div>
+        <iframe id="frame-1" id="ytplayer" type="text/html" width="720" height="405"
+          src="https://www.youtube.com/embed/yTX0HxTq9wo?autoplay=1&end=60&mute=1&controls=0&disablekb=1&fs=0&loop=0&modestbranding=1"
+          frameborder="0" allowfullscreen>
+      </section>
+      <section id="conteiner-2">
+        <iframe id="frame" width="0" height="0" src="https://www.youtube.com/embed/yTX0HxTq9wo"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </section>
+      <section id="conteiner-3">
+        <div id="top-1-filmes">
+          <img src="https://image.tmdb.org/t/p/w500/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg">
+          <font color="white">
+
+            <p>
+              Quatro anos após a destruição da Ilha Nublar, os dinossauros agora vivem e caçam ao lado de humanos em
+              todo
+              o mundo. Esse frágil equilíbrio remodela o futuro e deve determinar de uma vez por todas se os seres
+              humanos
+              continuarão sendo a espécie dominante em um planeta que agora compartilham com as criaturas mais temíveis
+              da
+              história.
+            </p>
+          </font>
+
+        </div>
+        <iframe id="frame-3" allow='autoplay' width="0" height="0"
+          src="https://www.youtube.com/embed/PuzRfhlk8mU?autoplay=1&end=60&mute=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </section>
+    </div>
+    <font color="white">
+
+      <p><img src="..\pages\img\icons8-heart-16.png"> Favoritos :</p>
+    </font>
+
+
+
+    <font color="white">
+      <p> <a href="#conteiner-1"><img id="icone-series" src="..\pages\img\icons8-programa-de-tv-50.png"></a> Series mais
+        favoritada</p>
+
+
+    </font>
+    <font color="white">
+      <p><a href="#conteiner-3"><img id="icone-filmes" src="..\pages\img\icons8-rolo-de-filme-64.png"></a> Filme mais
+        favoritado</p>
+
+    </font>
+
+
+
+
+
+
+  </div>
+  <div id="carrossel">
+    <h1>filmes populares</h1>
+    <span>
+      <a href="#section1" class="arrow__btn"><img id="anterior" src="../pages/img/icons8-arrow-64 (1).png"></a></a>
+    </span>
+    <div class="conteiner">
+      <section id="section1">
+
+        <span class="filme-item" id="card-1"> <img class="number"
+            src="https://top10.netflix.com/images/big_numbers/1.png"><a id="valor1" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-1" src="..." /></a></span>
+        <span class="filme-item" id="card-2"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/2.png"> <a id="valor2" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-2" src="..." /></a></span>
+        <span class="filme-item" id="card-3"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/3.png"> <a id="valor3" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-3" src="..." /></a></span>
+        <span class="filme-item" id="card-4"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/4.png"> <a id="valor4" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-4" src="..." /></a></span>
+        <span class="filme-item" id="card-5"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/5.png"> <a id="valor5" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-5" src="..." /></a></span>
+
+      </section>
+      <section id="section2">
+        <!--span>
+                
+                <a href="#section1" class="arrow__btn"><img class="anterior" src="../pages/img/icons8-arrow-64 (1).png"></a></a>
+              </span-->
+        <span class="filme-item" id="card-6"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/6.png"> <a id="valor6" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-6" src="..." /></a></span>
+        <span class="filme-item" id="card-7"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/7.png"> <a id="valor7" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-7" src="..." /></a></span>
+        <span class="filme-item" id="card-8"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/8.png"><a id="valor8" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-8" src="..." /></a></span>
+        <span class="filme-item" id="card-9"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/9.png"><a id="valor9" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-9" src="..." /></a></span>
+        <span class="filme-item" id="card-10"><img id="number10"
+            src="https://top10.netflix.com/images/big_numbers/10.png"><a id="valor10" href="..."><img onclick="buscar"
+              class="imageposter" id="cartaz-10" src="..." /></a></span>
+        <!--span>
+                                    <a href="#section1" class="arrow__btn"><img class="proximo" src="../pages/img/icons8-arrow-64.png"></a></a>
+                                  </span-->
+      </section>
+    </div>
+    <span>
+      <a href="#section2" class="arrow__btn"><img id="proximo" src="../pages/img/icons8-arrow-64.png"></a>
+    </span>
+
+
+  </div>
+
+  </div>
+  <div id="carrossel">
+    <h1>series populares</h1>
+    <span>
+      <a href="#section3" class="arrow__btn"><img id="anteriorseries"
+          src="../pages/img/icons8-arrow-64 (1).png"></a></a>
+    </span>
+    <div class="conteiner">
+      <section id="section3">
+        <span id="teste" class="serie-item" id="card-1">
+          <img class="number" src="https://top10.netflix.com/images/big_numbers/1.png">
+
+          <a id="tv1" href="..."> <img class="imageposter" id="poster-1" src="..." /></a>
+          <a id="linkstream-1" target="_blank" href="...">
+            <img id="l1" class="logo" src="..." id="plataform-1">
+
+
+            </img></a>
+        </span>
+        <span class="serie-item" id="card-2"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/2.png"> <a id="tv2" href="..."> <img class="imageposter"
+              id="poster-2" src="..." /> </a>
+          <a id="linkstream-2" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-2"></img></a></span>
+        <span class="serie-item" id="card-3"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/3.png"><a id="tv3" href="..."> <img class="imageposter"
+              id="poster-3" src="..." /> </a>
+          <a id="linkstream-3" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-3"></img></a></span>
+        <span class="serie-item" id="card-4"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/4.png"><a id="tv4" href="..."> <img class="imageposter"
+              id="poster-4" src="..." /> </a>
+          <a id="linkstream-4" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-4"></img></a></span>
+        <span class="serie-item" id="card-5"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/5.png"><a id="tv5" href="..."> <img class="imageposter"
+              id="poster-5" src="..." /> </a>
+          <a id="linkstream-5" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-5"></img></a></span>
+        <!--span>
+        <a href="#section4" class="arrow__btn"><img class="proximo" src="../pages/img/icons8-arrow-64.png"></a></a>
+      </span-->
+      </section>
+      <section id="section4">
+        <!--span>
+          <a href="#section3" class="arrow__btn"><img class="anterior" src="../pages/img/icons8-arrow-64 (1).png"></a></a>
+        </span-->
+        <span class="serie-item" id="card-6"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/6.png"><a id="tv6" href="..."> <img class="imageposter"
+              id="poster-6" src="..." /> </a>
+          <a id="linkstream-6" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-6"></img></a></span>
+        <span class="serie-item" id="card-7"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/7.png"><a id="tv7" href="..."> <img class="imageposter"
+              id="poster-7" src="..." /> </a>
+          <a id="linkstream-7" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-7"></img></a></span>
+        <span class="serie-item" id="card-8"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/8.png"><a id="tv8" href="..."> <img class="imageposter"
+              id="poster-8" src="..." /> </a>
+          <a id="linkstream-8" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-8"></img></a></span>
+        <span class="serie-item" id="card-9"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/9.png"><a id="tv9" href="..."> <img class="imageposter"
+              id="poster-9" src="..." /> </a>
+          <a id="linkstream-9" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-9"></img></a></span>
+        <span class="serie-item" id="card-10"><img class="number"
+            src="https://top10.netflix.com/images/big_numbers/10.png"><a id="tv10" href="..."> <img class="imageposter"
+              id="poster-10" src="..." /> </a>
+          <a id="linkstream-10" target="_blank" href="..."> <img class="logo" src="..."
+              id="plataform-10"></img></a></span>
+      </section>
+    </div>
+    <script type="module" src="../scripts/controller/ControllerTextMoviePage.js"></script>
+
+    <span>
+      <a href="#section4" class="arrow__btn"><img id="proximoseries" src="../pages/img/icons8-arrow-64.png"></a></a>
+    </span>
+  </div>
+  
+</body>
+
+</html>
